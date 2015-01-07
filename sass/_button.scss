@@ -1,0 +1,45 @@
+.btn-primary {
+	background-color: $blue;
+	color: white;
+	display: block;
+	width: 100%;
+	border: 0;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.1rem;
+	padding: 1rem 2rem;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	transition: $fast * 2;
+	overflow: hidden;
+	background-image: url(../assets/tick.svg);
+	background-size: 2rem;
+	background-position: center 100px;
+	background-repeat: no-repeat;
+	&:focus {
+		outline: none;
+	}
+	
+	&:hover, &:focus {
+		background-color: lighten($blue, 5);
+	}
+	
+	&.incart-true {
+		background-color: $green;
+		background-position: center;
+
+		.btn-text {
+			transform: translateY(-50px);
+		}
+	}
+	&::-moz-focus-inner {
+		border: 0;
+	}
+}
+
+.btn-text {
+	display: block;
+	transition-delay: 100ms;
+	transition-duration: $fast;
+}

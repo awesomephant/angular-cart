@@ -1,0 +1,57 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.items {
+	padding: 1rem;
+	list-style: none;
+}
+
+.item {
+	border: 1px solid darken(lightgray, 10);
+	background: #fff;
+	margin-bottom: 1rem;
+	display: block;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.item-info {
+	padding: 1rem;
+	border-top: 1px solid lightgray;
+	position: relative;
+}
+
+.item-price {
+	display: inline-block;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	color: $blue;
+	font-size: 1rem;
+	
+}
+
+.item-title {
+	font-size: 1rem;
+}
+
+.item-image {
+	display: block;
+	width: 100%;
+	padding: 1rem;
+}
+
+.item-desc {
+	color: gray;
+	font-size: .9rem;
+	padding-top: .5em;
+}
+

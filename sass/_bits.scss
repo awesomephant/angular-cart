@@ -1,0 +1,22 @@
+@mixin bp($point) {
+	@if $point == l {
+		@media (min-width: 65rem) { @content; }
+	}
+	@else if $point == m {
+		@media (min-width: 45rem) { @content; }
+	}
+	@else if $point == s {
+		@media (min-width: 35rem) { @content; }
+	}
+}
+
+$blue: #00A2FF;
+$green: #9ADC60;
+
+$copy: #3d3d3f;
+$fast: 300ms;
+
+@keyframes arrow {
+	from { transform: translateX(5px)}
+	to {transform: translateX(-2px)}
+}
